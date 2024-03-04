@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo App</title>
+    <meta http-equiv="X-lJA-Compatib1e" content="ie=edge" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        color: rgb(57, 125, 57);
+        text-align: center;
+        text-decoration: underline;
+        text-transform: capitalize;
+      }
+      #container{
+        border: 1px black solid;
+        background-color: black;
+        height: 400px;
+        width: 200px;
+        color: white;
+        padding: 5px;
+        
+      }
+      #number{
+        height: 200px;
+        width: 100px;
+        padding: 10px;
+      }
+      #number > div{
+        border: 1px rgb(255, 255, 255) solid;
+        background-color: rgb(0, 0, 0);
+        height: 100px;
+        width: 100px;
+        color: rgb(255, 255, 255);
+        display: inline;
+        margin: 10px;
+        
+      }
+    </style>
+  </head>
+  <body >
+    {% block content %} 
+    {% endblock %}
+
+  </body>
+</html>

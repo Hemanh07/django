@@ -1,0 +1,47 @@
+{% extends 'home.html' %}
+{% block content%}
+<h1>hai this is {{name}} here</h1>
+<h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem eum dolor blanditiis in suscipit et sit numquam repellat mollitia neque officiis omnis cumque esse nobis cum deleniti, sapiente sunt.</h3>
+<form action="add" method="post">
+    {%csrf_token%}
+    <fieldset>
+        
+        <legend>addition of two numvbers</legend>
+        <label for="number_1">enter number 1:</label>
+        <input type="number" name="number_1" id="number_1">
+        <br>
+        <label for="number_2">enter number 2:</label>
+        <input type="number" name="number_2" id="number_2">
+        <br>
+        <button type="submit">Add</button>
+
+    </fieldset>
+</form>
+<div id="container">
+    <div id="display" style="border: 2px rgb(255, 255, 255) double;height: 40px;width:auto">
+        
+    </div>
+    <div id="number">
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>.</div>
+        <div>0</div>
+        <div>π</div>
+    </div>
+   <div id="operator">
+    <div>➕</div>
+    <div>✖️</div>
+    <div>➖</div>
+    <div>➗</div>
+    <div>🟰</div>
+   </div>
+   
+</div>
+{%endblock%}
